@@ -67,6 +67,9 @@ int32_t color_names[] = {
 void usage()
 {
     fprintf(stderr, "tsv2excel -o out.xlsx in.tsv\n");
+    fprintf(stderr, "A lightwight tool to convert tsv files to a excel file.\n");
+    fprintf(stderr, "Author: shiquan@genomics.cn\n");
+    fprintf(stderr, "https://github.com/shiquan/tsv2excel\n");
     exit(1);
 }
 void default_themes_init(lxw_workbook *wb, struct worksheet_theme_choice *theme, int n)
