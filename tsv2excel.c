@@ -200,6 +200,8 @@ void prase_tsv_files(lxw_workbook *wb)
 	    free(splits);
 	    str.l = 0;
 	}
+	if (str.m) free(str.s);
+	gzclose(fp);
     }
 
 }
@@ -209,8 +211,7 @@ void clean_args()
     for (i=0; i<args.n_sheet; ++i) {
 	struct worksheet_compact *wc = &args.sheets[i];
 	if (wc->name) free(wc->name);
-	if (wc->file) free(wc->file);
-	
+	if (wc->file) free(wc->file);	
     }
     if (args.sheets) free(args.sheets);
     if (args.out) free(args.out);
