@@ -2,7 +2,7 @@
  *
  * Copyright  shiquan.cn@gmail.com
  *
- * License: MIT
+ * Free to distribute, use, modify, share for any nonprofit or profit purpose.
  */
 
 #include <stdio.h>
